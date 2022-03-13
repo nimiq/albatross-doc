@@ -20,12 +20,12 @@ Micro header:
 - Block number `u32`: The number of the block.
 - View number `u32`: The view number of the block. This number increases by one whenever a [view change]() happens, and it resets on every macro block.
 - Timestamp `u64`: The block's timestamp in Unix time with millisecond precision.
-- Parent hash (Blake2bHash): The hash of the header of the immediately preceding block (either micro or macro).
-- Seed (VrfSeed): The seed of the block. This seed is the implementation of the [VXEDdSA](https://www.signal.org/docs/specifications/xeddsa/#vxeddsa) algorithm of the seed of the immediately preceding block (either micro or macro) using the validator key of the block producer.
+- Parent hash `Blake2bHash`: The hash of the header of the immediately preceding block (either micro or macro).
+- Seed `VrfSeed`: The seed of the block. This seed is the implementation of the [VXEDdSA](https://www.signal.org/docs/specifications/xeddsa/#vxeddsa) algorithm of the seed of the immediately preceding block (either micro or macro) using the validator key of the block producer.
 - Extra data: Field containing arbitrary data.
-- State root (Blake2bHash): The root of the [Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree) of the blockchain state. It acts as a commitment to the state.
-- Body root (Blake2bHash): The root of the Merkle tree of the body. It acts as a commitment to the body.
-- History root (Blake2bHash): The root of a Merkle Montain Range over all of the transactions that occurred in the current epoch.
+- State root `Blake2bHash`: The root of the [Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree) of the blockchain state. It acts as a commitment to the state.
+- Body root `Blake2bHash`: The root of the Merkle tree of the body. It acts as a commitment to the body.
+- History root `Blake2bHash`: The root of a Merkle Montain Range over all of the transactions that occurred in the current epoch.
 
 <br />
 
@@ -43,7 +43,7 @@ Micro justification:
 
 <br />
 
-Note: `u16`, `u32`, and `u64` refer to the unsigned integer type. Blake2bHash refers to the algorithm used for the hash function.
+Note: `u16`, `u32`, and `u64` refer to the unsigned integer type. `Blake2bHash` refers to the algorithm used for the hash function.
 
 <br />
 
@@ -65,17 +65,17 @@ Macro header:
 - Block number `u32`: The number of the block.
 - View number `u32`: The view number of the block. This number increases by one whenever a view change happens, and it resets on every macro block.
 - Timestamp `u64`: The block's timestamp in Unix time with millisecond precision.
-- Parent hash (Blake2bHash): The hash of the header of the immediately preceding block (either micro or macro).
-- Parent election hash (Blake2bHash): The hash of the header of the preceding election macro block.
-- Seed (VrfSeed): The seed of the block. This seed is the implementation of the [VXEDdSA](https://www.signal.org/docs/specifications/xeddsa/#vxeddsa) algorithm of the seed of the immediately preceding block (either micro or macro) using the validator key of the block proposer.
+- Parent hash `Blake2bHash`: The hash of the header of the immediately preceding block (either micro or macro).
+- Parent election hash `Blake2bHash`: The hash of the header of the preceding election macro block.
+- Seed `VrfSeed`: The seed of the block. This seed is the implementation of the [VXEDdSA](https://www.signal.org/docs/specifications/xeddsa/#vxeddsa) algorithm of the seed of the immediately preceding block (either micro or macro) using the validator key of the block proposer.
 - Extra data: Field containing arbitrary data.
-- State root (Blake2bHash): The root of the Merkle tree of the blockchain state. It acts as a commitment to the state.
-- Body root (Blake2bHash): The root of the Merkle tree of the body. It acts as a commitment to the body.
-- History root (Blake2bHash): The root of a Merkle Montain Range over all of the transactions that occurred in the current epoch.
+- State root `Blake2bHash`: The root of the Merkle tree of the blockchain state. It acts as a commitment to the state.
+- Body root `Blake2bHash`: The root of the Merkle tree of the body. It acts as a commitment to the body.
+- History root `Blake2bHash`: The root of a Merkle Montain Range over all of the transactions that occurred in the current epoch.
 
 <br />
 
-Note: `u16`, `u32`, and `u64` refer to the unsigned integer type. Blake2bHash refers to the algorithm used for the hash function.
+Note: `u16`, `u32`, and `u64` refer to the unsigned integer type. `Blake2bHash` refers to the algorithm used for the hash function.
 
 <br />
 
