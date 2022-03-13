@@ -49,8 +49,6 @@ In the following figure, we explain three different scenarios where validators h
   <img src="https://i.postimg.cc/4NNLPRzP/punishments-drawio.png"/>
 </p>
 
-*Figure 1*
-
 <br/>
 
 1. A malicious validator forked the chain at micro block A. Then, a validator submitted a fork proof at micro block B, and the malicious validator sent an unparking transaction at micro block C. Note that this occurrence happened during batch 1. Here is how the protocol handled the punishment:
