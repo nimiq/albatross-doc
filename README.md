@@ -10,47 +10,47 @@ Albatross, the Nimiq 2.0 consensus algorithm, presents a novel vision on blockch
 
 ### Albatross Blockchain
 
-[Block format](): micro and macro blocks format.
+[Block format](https://github.com/nimiq/albatross-doc/blob/main/BlockFormat.md): micro and macro blocks format.
 
-[Slots](): how validators are selected to produce, propose and validate blocks using slots.
+[Slots](https://github.com/nimiq/albatross-doc/blob/main/Slots.md): how validators are selected to produce, propose and validate blocks using slots.
 
-[Tendermint](): implemented protocol for macro block proposals.
+[Tendermint](https://github.com/nimiq/albatross-doc/blob/main/Tendermint.md): implemented protocol for macro block proposals.
 
 <br />
 
 ### Albatross behavior
 
-[Optimistic and pessimistic mode](): an overview on the blockchain behavior.
+[Optimistic and pessimistic mode](https://github.com/nimiq/albatross-doc/blob/main/OptimisticAndPessimisticMode.md): an overview on the blockchain behavior.
 
-[Fork proofs](): our approach to ending a fork in the chain.
+[Fork proofs](https://github.com/nimiq/albatross-doc/blob/main/ForkProofs.md): our approach to ending a fork in the chain.
 
-[View change](): our approach to preventing delays in block production.
+[View change](https://github.com/nimiq/albatross-doc/blob/main/ViewChange.md): our approach to preventing delays in block production.
 
-[Punishments](): details on the punishment sets and how validators get punished.
+[Punishments](https://github.com/nimiq/albatross-doc/blob/main/Punishments.md): details on the punishment sets and how validators get punished.
 
 <br />
 
 ### Blockchain
 
-[Rewards](): distribution among validators.
+[Rewards](https://github.com/nimiq/albatross-doc/blob/main/Rewards.md): distribution among validators.
 
 [Supply formula](): dictates the supply at any given moment.
 
-[Verifiable random function](): random seed used to select validators.
+[Verifiable random function](https://github.com/nimiq/albatross-doc/blob/main/VRF.md): random seed used to select validators.
 
 <br />
 
 ### Staking contract
 
-[Staking contract](): detailed documentation on the staking contract.
+[Staking contract](https://github.com/nimiq/albatross-doc/blob/main/StakingContract.md): detailed documentation on the staking contract.
 
 <br />
 
 ### Accounts
 
-[Accounts](): Nimiq’s accounts.
+[Accounts](https://github.com/nimiq/albatross-doc/blob/main/Accounts.md): Nimiq’s accounts.
 
-[Transactions](): communicating with the blockchain.
+[Transactions](https://github.com/nimiq/albatross-doc/blob/main/Transactions.md): communicating with the blockchain.
 
 <br />
 
