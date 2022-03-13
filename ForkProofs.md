@@ -16,6 +16,7 @@ Mind that, even though the validator is who misbehaves, it is the view slot that
 <p align="center">
   <img src="https://i.postimg.cc/nVjdXGGV/forking-drawio.png"/>
 </p>
+
 *Figure 1*
 
 <br/>
@@ -29,6 +30,7 @@ Note that when a rational validator ends a fork, it can submit a fork proof in t
 <p align="center">
   <img src="https://i.postimg.cc/cH6FMRqm/forking-2-drawio.png"/>
 </p>
+
 *Figure 2*
 
 <br/>
@@ -67,6 +69,7 @@ The probability of d view slots being owned by malicious validators decreases on
 <br/>
 
 $ P(d)=(\frac{1}{3})^d $
+<img src="https://render.githubusercontent.com/render/math?math=P(d)=(\frac{1}{3})^d">
 
 
 <br/>
