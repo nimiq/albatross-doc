@@ -66,7 +66,8 @@ The probability of d view slots being owned by malicious validators decreases on
 
 <br/>
 
-$P(d)=(\frac{1}{3})^d$
+$ P(d)=(\frac{1}{3})^d $
+
 
 <br/>
 
