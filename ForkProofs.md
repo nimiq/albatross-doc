@@ -1,4 +1,4 @@
-A fork is a split in the blockchain, and it is created by malicious validators who produce two or more micro blocks at the same block height and view number. Only malicious validators will create or build on a fork, mostly to attempt a double-spend attack. Forks can only happen in micro blocks since macro blocks are forkless and produced with [Tendermint](https://www.notion.so/Tendermint-protocol-22c7bfb4c7924ae78f57e1db9039c95c).
+A fork is a split in the blockchain, and it is created by malicious validators who produce two or more micro blocks at the same block height and view number. Only malicious validators will create or build on a fork, mostly to attempt a double-spend attack. Forks can only happen in micro blocks since macro blocks are forkless and produced with [Tendermint]().
 
 <br/>
 
@@ -66,7 +66,7 @@ The probability of d view slots being owned by malicious validators decreases on
 
 <br/>
 
-`$P(d)=(\frac{1}{3})^d$`
+$P(d)=(\frac{1}{3})^d$
 
 <br/>
 
@@ -75,7 +75,7 @@ The probability decreases rapidly, as shown in the following table:
 <br/>
 
 <p align="center">
-  <img src="https://i.postimg.cc/qq3QWpv6/probability-drawio.png
-"/>
+  <img src="https://i.postimg.cc/qq3QWpv6/probability-drawio.png"/>
 </p>
+
 *Figure 3*
