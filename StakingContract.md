@@ -67,8 +67,8 @@ Since the rewards of a batch are distributed at the end of the next batch and [f
 Each validator has its own account. Once it sends a transaction to create an account in the staking contract as a validator, the validator receives the following object.
 
 - Address: It serves as an identifier of the validator's account. A key corresponding to this address is used to interact with the staking contract through transactions.
-- Signing key [Schnorr public key](https://en.wikipedia.org/wiki/Schnorr_signature)): Validators sign the blocks they have produced using this key. It is also used to sign certain transactions inherent to the validator.
-- Voting key [BLS public key](https://en.wikipedia.org/wiki/BLS_digital_signature)): Validators use this key to vote for macro blocks and view changes.
+- Signing key [Schnorr public key](https://en.wikipedia.org/wiki/Schnorr_signature): Validators sign the blocks they have produced using this key. It is also used to sign certain transactions inherent to the validator.
+- Voting key [BLS public key](https://en.wikipedia.org/wiki/BLS_digital_signature): Validators use this key to vote for macro blocks and view changes.
 - Reward address: Account where the rewards of a batch are sent to.
 - Signal data: Optional field which the validator can use to coordinate with other validators.
 - Balance: The amount of coins staked by the validator, including those delegated to the validator by stakers.
