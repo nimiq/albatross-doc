@@ -29,5 +29,8 @@ In either case, the malicious validators are punished according to the [punishme
 <br/>
 
 - Macro blocks: Macro blocks have finality, meaning that they are forkless. Yet, the elected leader can fail with the macro block proposal. There are two ways to attempt to tamper with macro blocks:
+
+<br/>
+
     - Failing to make a macro block proposal. If a validator doesn’t propose a macro block in the expected time, [Tendermint]() has its procedure to elect a new macro block leader.
     - Creating an invalid proposal. Tendermint ignores invalid proposals, therefore, a new validator is elected as the macro block leader.
