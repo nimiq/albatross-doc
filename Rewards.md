@@ -46,7 +46,7 @@ For a detailed explanation about the supply formula to calculate the coinbase: [
 
 <br/>
 
-Reward distribution:
+### Reward distribution:
 
 The rewards of a batch are equally divided among the validator slot list. Hence, the reward is equally divided among all the slots. The validator slot list contains 512 view slots, and validator can have one view slot or multiple ones.
 
