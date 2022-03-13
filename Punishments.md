@@ -31,7 +31,11 @@ Once a view change occurs, the validator is immediately punished. When a fork ha
 
 Hence, when a validator gets punished, it does not have any immediate implications besides being instantly added to the punishments sets.
 
+<br/>
+
 After being added to these three sets, the validator can send an unparking transaction to the network, preventing it from being inactivated at the end of the epoch. The validator is immediately removed from the disabled set and parked set by sending this transaction. However, it only gets cleared from the lost reward set at the end of the batch since this set gets automatically cleared at every batch.
+
+<br/>
 
 When a validator gets inactivated, it remains in the staking contract, but it can't be selected to the next validator slot list. The end of an epoch sets a new validator slot list, being imperative that validators send the unparking transaction before the end of it.
 
