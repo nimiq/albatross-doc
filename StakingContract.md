@@ -20,9 +20,9 @@ If a node doesn't have the resources, knowledge, or availability to be a validat
 
 ### Staking contract main components:
 
-- The **staking contract object** is where the information of the contract is tracked, such as the address of validators for the current epoch, their balance, and the punishment sets.
-- The **validator**'**s object** is where is stored each validator's address, their balance, their keys, and the number of stakers they validate for.
-- The **staker object** contains the address, the balance, and the address of the validator to which the staker delegates its coins.
+- The staking contract path is where the information of the contract is tracked, such as the address of validators for the current epoch, their balance, and the punishment sets.
+- The validator's path is where is stored each validator's address, their balance, their keys, and the number of stakers they validate for.
+- The staker's path contains the address, the balance, and the address of the validator to which the staker delegates its coins.
 
 <br/>
 
@@ -38,7 +38,7 @@ This is an illustration to navigate through the staking contract. For instance, 
 2. Navigate and select the path to the **validators list**
 3. Select the path to the preferred **validator's address**
 4. Select the path of the chosen **main validator**
-5. Access to the address of the selected **validator's account**
+5. Access to the address of the selected **validator account**
 
 <br/>
 
