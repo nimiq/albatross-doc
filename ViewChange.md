@@ -24,7 +24,7 @@ Using figure 1 as a reference, after the view slot finishes producing block 3 an
 
 1. Wait for a new block; if the block is produced, the algorithm terminates, and a new block is added to the blockchain.
 2. If the time elapses, request a view change by sending a view change message to the network. Wait for either a new block or 2𝑓+1 view change messages.
-3. If the block is received from the delayed view slot, it is added to the blockchain. If 2𝑓+1 view change messages are received, a new view slot is selected and the algorithm restarts in step 1.)
+3. If the block is received from the delayed view slot, it is added to the blockchain. If 2𝑓+1 view change messages are received, a new view slot is selected and the algorithm restarts in step 1.
 
 <br/>
 
