@@ -10,7 +10,7 @@ Nimiq 2.0 blockchain has micro and macro blocks. Validators produce micro blocks
 
 ### Micro Blocks
 
-Micro blocks contain user transactions, and each micro block is produced and signed by a validator according to the [validator selection]().
+Micro blocks contain user transactions, and each micro block is produced and signed by a validator according to the [validator selection](https://github.com/nimiq/albatross-doc/blob/main/Slots.md).
 
 <br />
 
@@ -18,7 +18,7 @@ Micro header:
 
 - Version `u16`: The version number of the block. When the version number changes, it results in a hard fork.
 - Block number `u32`: The number of the block.
-- View number `u32`: The view number of the block. This number increases by one whenever a [view change]() happens, and it resets on every macro block.
+- View number `u32`: The view number of the block. This number increases by one whenever a [view change](https://github.com/nimiq/albatross-doc/blob/main/ViewChange.md) happens, and it resets on every macro block.
 - Timestamp `u64`: The block's timestamp in Unix time with millisecond precision.
 - Parent hash `Blake2bHash`: The hash of the header of the immediately preceding block (either micro or macro).
 - Seed `VrfSeed`: The seed of the block. This seed is the implementation of the [VXEDdSA](https://www.signal.org/docs/specifications/xeddsa/#vxeddsa) algorithm of the seed of the immediately preceding block (either micro or macro) using the validator key of the block producer.
@@ -31,8 +31,8 @@ Micro header:
 
 Micro body:
 
-- Fork proofs: This contains the fork proofs of this block. This field might be empty since forks don't occur in every block.
-- Transactions: Contains all the transactions of the block. This field might be empty since it is possible to produce blocks without any transactions.
+- [Fork proofs](https://github.com/nimiq/albatross-doc/blob/main/ForkProofs.md): This contains the fork proofs of this block. This field might be empty since forks don't occur in every block.
+- [Transactions](https://github.com/nimiq/albatross-doc/blob/main/Transactions.md): Contains all the transactions of the block. This field might be empty since it is possible to produce blocks without any transactions.
 
 <br />
 
@@ -55,7 +55,7 @@ Note: `u16`, `u32`, and `u64` refer to the unsigned integer type. `Blake2bHash` 
 
 ### Macro Blocks
 
-There are two types of macro blocks: election and checkpoint. A new validator list is elected in every election macro block, and the staking contract is updated accordingly. The checkpoint macro blocks serves to reduce the syncing time for new nodes. Macro blocks are produced with Tendermint, where a random validator is chosen to propose the new macro block. User transactions are not included in macro blocks.
+There are two types of macro blocks: election and checkpoint. A new validator list is elected in every election macro block, and the [staking contract](https://github.com/nimiq/albatross-doc/blob/main/StakingContract.md) is updated accordingly. The checkpoint macro blocks serves to reduce the syncing time for new nodes. Macro blocks are produced with [Tendermint](https://github.com/nimiq/albatross-doc/blob/main/Tendermint.md), where a random validator is chosen to propose the new macro block. User transactions are not included in macro blocks.
 
 <br />
 
@@ -83,7 +83,7 @@ Macro body:
 
 - Validators: Contains all the information regarding the next validator list. It includes their validator public key, reward address, and validator slots.
 - Public key tree root: The root of a special Merkle tree over the validator's public keys. It is used in the nano-sync.
-- Lost reward set: It represents which validator slots had their reward slashed when the block was produced. It is used for [reward]() distribution.
+- Lost reward set: It represents which validator slots had their reward slashed when the block was produced. It is used for [reward](https://github.com/nimiq/albatross-doc/blob/main/Rewards.md) distribution.
 - Disabled set: It represents which validator slots aren't allowed to produce micro blocks or propose macro blocks when the block was produced. It is used for reward distribution as well.
 
 <br />
@@ -128,9 +128,9 @@ Nimiq 2.0 blockchain is divided into batches and epochs:
 
 <br />
 
-Batch - The interval between two macro blocks. A batch consists of several micro blocks, closing on a macro block.
+**Batch** - The interval between two macro blocks. A batch consists of several micro blocks, closing on a macro block.
 
-Epoch - The interval between two election macro blocks marks an epoch. It starts with the first micro block after an election macro block, and it ends at an election macro block, including multiple micro blocks and checkpoint macro blocks in between.
+**Epoch** - The interval between two election macro blocks marks an epoch. It starts with the first micro block after an election macro block, and it ends at an election macro block, including multiple micro blocks and checkpoint macro blocks in between.
 
 <br />
 
