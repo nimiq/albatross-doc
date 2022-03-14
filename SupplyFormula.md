@@ -14,7 +14,7 @@ We know that the supply begins at <img src="https://render.githubusercontent.com
 
 We still need to decide what units of time we want for *t* and calculate the corresponding constants <img src="https://render.githubusercontent.com/render/math?math=V_0"> and <img src="https://render.githubusercontent.com/render/math?math=\beta">. We want *t* to be in milliseconds for the code since the timestamps are in milliseconds, and we want the maximum precision possible. We also want the supply to be given in Lunas (1 NIM = 100,000 Lunas).
 
-The initial velocity is simple to calculate. 525 NIM/minute corresponds to 875 Lunas/millisecond. For the decay, we know that the velocity should be 1.47% smaller after one year. First, we calculate the number of milliseconds in a year. By definition, there are <img src="https://render.githubusercontent.com/render/math?math=24∗60∗60∗1000 = 86400000"> milliseconds in a day. We also know that, on average, a year has 365.2425 days. That gives us a total of 31556952000 milliseconds in a year. To get the decay then we solve the following equation:
+The initial velocity is simple to calculate. 525 NIM/minute corresponds to 875 Lunas/millisecond. For the decay, we know that the velocity should be 1.47% smaller after one year. First, we calculate the number of milliseconds in a year. By definition, there are 24∗60∗60∗1000 = 86400000 milliseconds in a day. We also know that, on average, a year has 365.2425 days. That gives us a total of 31556952000 milliseconds in a year. To get the decay then we solve the following equation:
 
 
 <img src="https://render.githubusercontent.com/render/math?math=e^{-\beta \cdot 31556952000}=1-0.0147\Leftrightarrow e^{-\beta  \cdot  31556952000}=0.9853\Leftrightarrow">
@@ -32,9 +32,9 @@ From these constants and the general formula for the supply, we get the referenc
 
 However, it might be more useful for other applications to have a supply formula that uses days instead of seconds and returns NIM instead of Lunas, so that we don’t have to handle very large numbers. In this case, we can recalculate the constants to yield:
 
-
-<img align="center" src="https://render.githubusercontent.com/render/math?math=V_0=\text{75000 NIM/day}">
-
+<p align="center">
+  <img src="https://render.githubusercontent.com/render/math?math=V_0=\text{75000 NIM/day}">
+</p>
 
 
 <img src="https://render.githubusercontent.com/render/math?math=\beta=-\frac{\ln(0.9853)}{365.2425}\approx0.000040546">
