@@ -2,7 +2,7 @@ The Albatross consensus algorithm was built to adapt its behavior in case some v
 
 The view change protocol is inspired by the PBFT algorithm, tolerating up to one-third of malicious validators. When a validator fails to produce a block because it went offline, or even if it purposely wants to delay the block, other validators request a view change on the current validator.
 
-<]()br/>
+<br/>
 
 **View change protocol:**
 
