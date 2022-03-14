@@ -5,13 +5,13 @@ Slots are what allow validators to produce micro blocks and propose and sign mac
 There are two types of slots:
 
 - View slots: These allow a validator to produce one micro block or propose a macro block at a specific block height and a specific view number.
-- Validator slots: These allow validators to be part of the consensus, sign macro blocks, and receive [rewards]().
+- Validator slots: These allow validators to be part of the consensus, sign macro blocks, and receive [rewards](https://github.com/nimiq/albatross-doc/blob/main/Rewards.md).
 
 <br/>
 
 **Random seed generation**:
 
-The initial random seed will be generated at the genesis block. To generate a random seed for the subsequent blocks, the protocol will lean on the [VXEDdSA](https://www.signal.org/docs/specifications/xeddsa/#vxeddsa) algorithm instantiated as a [verifiable random function](). This random seed is present in every block. To generate the validator slot list, the random seed of the election macro block is used. However, to elect each view slot list, the random seed used is the one from the previous block.
+The initial random seed will be generated at the genesis block. To generate a random seed for the subsequent blocks, the protocol will lean on the [VXEDdSA](https://www.signal.org/docs/specifications/xeddsa/#vxeddsa) algorithm instantiated as a [verifiable random function](https://github.com/nimiq/albatross-doc/blob/main/VRF.md). This random seed is present in every block. To generate the validator slot list, the random seed of the election macro block is used. However, to elect each view slot list, the random seed used is the one from the previous block.
 
 <br/>
 
