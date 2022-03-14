@@ -45,7 +45,7 @@ This is an illustration to navigate through the staking contract. For instance, 
 ### Staking contract object
 
 - Balance: The total amount of coins staked in the staking contract. This amount includes both validators and stakers deposits.
-- Active validators list: A list of all the validators eligible to receive validator and view [slots](). It also includes their corresponding balance.
+- Active validators list: A list of all the validators eligible to receive validator and view [slots](https://github.com/nimiq/albatross-doc/blob/main/Slots.md). It also includes their corresponding balance.
 - Parked set: The list of validators parked in the current epoch. A parked validator gets inactivated at the end of the epoch unless it sends an unparking transaction.
 - Current lost reward: The list of validator slots that lost rewards in the current batch, meaning that they won't receive the rewards of the current batch when distributed at the end of the next batch.
 - Previous lost reward: The list of validator slots that lost rewards in the previous batch, meaning that they won't receive the rewards at the end of the current batch.
@@ -54,11 +54,11 @@ This is an illustration to navigate through the staking contract. For instance, 
 
 <br/>
 
-The staking contract gathers both current and previous lost rewards and disabled slots to keep track of the validators that get their rewards slashed. As explained in the [punishments]() document, validators are immediately added to the punishment sets once they misbehave. It is essential to monitor when they are added and removed since the punishment sets dictate the rewards distribution.
+The staking contract gathers both current and previous lost rewards and disabled slots to keep track of the validators that get their rewards slashed. As explained in the [punishments](https://github.com/nimiq/albatross-doc/blob/main/Punishments.md) document, validators are immediately added to the punishment sets once they misbehave. It is essential to monitor when they are added and removed since the punishment sets dictate the rewards distribution.
 
 <br/>
 
-Since the rewards of a batch are distributed at the end of the next batch and [fork proofs]() can be submitted until the end of the batch after the fork occurred, the staking contract needed to keep track of which validators are punished and in which batch. The punishment sets also monitor which validators are eligible to produce blocks.
+Since the rewards of a batch are distributed at the end of the next batch and [fork proofs](https://github.com/nimiq/albatross-doc/blob/main/ForkProofs.md) can be submitted until the end of the batch after the fork occurred, the staking contract needed to keep track of which validators are punished and in which batch. The punishment sets also monitor which validators are eligible to produce blocks.
 
 <br/>
 
@@ -67,8 +67,8 @@ Since the rewards of a batch are distributed at the end of the next batch and [f
 Each validator has its own account. Once it sends a transaction to create an account in the staking contract as a validator, the validator receives the following object.
 
 - Address: It serves as an identifier of the validator's account. A key corresponding to this address is used to interact with the staking contract through transactions.
-- Signing key [Schnorr public key](https://en.wikipedia.org/wiki/Schnorr_signature): Validators sign the blocks they have produced using this key. It is also used to sign certain transactions inherent to the validator.
-- Voting key [BLS public key](https://en.wikipedia.org/wiki/BLS_digital_signature): Validators use this key to vote for macro blocks and view changes.
+- Signing key [(Schnorr public key)](https://en.wikipedia.org/wiki/Schnorr_signature): Validators sign the blocks they have produced using this key. It is also used to sign certain transactions inherent to the validator.
+- Voting key [(BLS public key)](https://en.wikipedia.org/wiki/BLS_digital_signature): Validators use this key to vote for macro blocks and view changes.
 - Reward address: Account where the rewards of a batch are sent to.
 - Signal data: Optional field which the validator can use to coordinate with other validators.
 - Balance: The amount of coins staked by the validator, including those delegated to the validator by stakers.
