@@ -7,7 +7,7 @@ Nimiq 2.0 has four types of accounts:
 
 <br/>
 
-Users can operate with their accounts and interact with the blockchain through [transactions](). Each account has a unique address. They are stored in the state tree of the blockchain.
+Users can operate with their accounts and interact with the blockchain through [transactions](https://github.com/nimiq/albatross-doc/blob/main/Transactions.md). Each account has a unique address. They are stored in the state tree of the blockchain.
 
 <br/>
 
@@ -97,4 +97,4 @@ The staking contract is a Nimiq 2.0 type of contract that allows nodes to be val
 
 <br/>
 
-For a detailed explanation about the staking contract, follow this [link]() to read on validators, stakers, and their interactions with the staking contract.
+For a detailed explanation about the staking contract, follow this [link](https://github.com/nimiq/albatross-doc/blob/main/StakingContract.md) to read on validators, stakers, and their interactions with the staking contract.
