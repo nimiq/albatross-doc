@@ -34,7 +34,7 @@ Albatross, the Nimiq 2.0 consensus algorithm, presents a novel vision on blockch
 
 [Rewards](https://github.com/nimiq/albatross-doc/blob/main/Rewards.md): distribution among validators.
 
-[Supply formula](): dictates the supply at any given moment.
+[Supply formula](https://github.com/nimiq/albatross-doc/blob/main/SupplyFormula.md): dictates the supply at any given moment.
 
 [Verifiable random function](https://github.com/nimiq/albatross-doc/blob/main/VRF.md): random seed used to select validators.
 
