@@ -13,31 +13,31 @@ Albatross, the Nimiq 2.0 consensus algorithm, presents a novel vision on blockch
 ---
 
 
-[Block format](/just-the-docs/docs/block-format): micro and macro blocks format.
+[Block format](/albatross-doc/docs/block-format): micro and macro blocks format.
 
-[Slots](/just-the-docs/docs/slots): how validators are selected to produce, propose and validate blocks using slots.
+[Slots](/albatross-doc/docs/slots): how validators are selected to produce, propose and validate blocks using slots.
 
-[Tendermint](/just-the-docs/docs/tendermint): implemented protocol for macro block proposals.
+[Tendermint](/albatross-doc/docs/tendermint): implemented protocol for macro block proposals.
 
-[Optimistic and pessimistic mode](/just-the-docs/docs/behavior-modes): an overview on the blockchain behavior.
+[Optimistic and pessimistic mode](/albatross-doc/docs/behavior-modes): an overview on the blockchain behavior.
 
-[Fork proofs](/just-the-docs/docs/fork-proofs): our approach to ending a fork in the chain.
+[Fork proofs](/albatross-doc/docs/fork-proofs): our approach to ending a fork in the chain.
 
-[View change](/just-the-docs/docs/view-change): our approach to preventing delays in block production.
+[View change](/albatross-doc/docs/view-change): our approach to preventing delays in block production.
 
-[Punishments](/just-the-docs/docs/punishments): details on the punishment sets and how validators get punished.
+[Punishments](/albatross-doc/docs/punishments): details on the punishment sets and how validators get punished.
 
-[Rewards](/just-the-docs/docs/rewards): distribution among validators.
+[Rewards](/albatross-doc/docs/rewards): distribution among validators.
 
-[Supply formula](/just-the-docs/docs/supply-formula): dictates the supply at any given moment.
+[Supply formula](/albatross-doc/docs/supply-formula): dictates the supply at any given moment.
 
-[Verifiable random function](/just-the-docs/docs/vrf): random seed used to select validators.
+[Verifiable random function](/albatross-doc/docs/vrf): random seed used to select validators.
 
-[Staking contract](/just-the-docs/docs/staking-contract): detailed documentation on the staking contract.
+[Staking contract](/albatross-doc/docs/staking-contract): detailed documentation on the staking contract.
 
-[Accounts](/just-the-docs/docs/accounts): Nimiq’s accounts.
+[Accounts](/albatross-doc/docs/accounts): Nimiq’s accounts.
 
-[Transactions](/just-the-docs/docs/transactions): communicating with the blockchain.
+[Transactions](/albatross-doc/docs/transactions): communicating with the blockchain.
 
 <br />
 

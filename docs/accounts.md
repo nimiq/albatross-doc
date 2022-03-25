@@ -4,7 +4,7 @@ title: Accounts
 nav_order: 2
 ---
 
-Nimiq 2.0 has four types of accounts: basic accounts, HTLC accounts, vesting accounts and staking accounts. Users can operate with their accounts and interact with the blockchain through [transactions](/just-the-docs/docs/transactions). Each account has a unique address. They are stored in the state tree of the blockchain.
+Nimiq 2.0 has four types of accounts: basic accounts, HTLC accounts, vesting accounts and staking accounts. Users can operate with their accounts and interact with the blockchain through [transactions](/albatross-doc/docs/transactions). Each account has a unique address. They are stored in the state tree of the blockchain.
 
 <br/>
 
@@ -93,4 +93,4 @@ Note that unlocking the funds is a predefined action, and it happens at every â€
 
 The staking contract is a Nimiq 2.0 type of contract that allows nodes to be validators and stakers, thus being a part of the consensus. Any node with a wallet and stake in Nimiq's blockchain can propose to be a validator or a staker.
 
-For a detailed explanation about the staking contract, follow this [link](/just-the-docs/docs/) to read on validators, stakers, and their interactions with the staking contract.
+For a detailed explanation about the staking contract, follow this [link](/albatross-doc/docs/) to read on validators, stakers, and their interactions with the staking contract.

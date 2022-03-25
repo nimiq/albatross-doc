@@ -4,7 +4,7 @@ title: Rewards
 nav_order: 10
 ---
 
-When a potential validator becomes an active validator, it can start producing blocks. If the validator successfully produces blocks without forking or [delaying](/just-the-docs/docs/view-change) the blockchain, it will be rewarded at the macro block of the next batch.
+When a potential validator becomes an active validator, it can start producing blocks. If the validator successfully produces blocks without forking or [delaying](/albatross-doc/docs/view-change) the blockchain, it will be rewarded at the macro block of the next batch.
 
 <br/>
 
@@ -12,7 +12,7 @@ During a batch, there is a chance of malicious validators forking the chain or a
 
 <br/>
 
-Validators can submit a [fork proof](/just-the-docs/docs/fork-proofs) until the end of the batch since the rewards are distributed at the end of the next batch. Essentially, there is a delay of one batch. The rewards are calculated from the macro block of the current batch and distributed at the macro block of the next batch. 
+Validators can submit a [fork proof](/albatross-doc/docs/fork-proofs) until the end of the batch since the rewards are distributed at the end of the next batch. Essentially, there is a delay of one batch. The rewards are calculated from the macro block of the current batch and distributed at the macro block of the next batch. 
 
 <br/>
 
@@ -50,7 +50,7 @@ Essentially, the coinbase is calculated by subtracting the supply calculated in 
 
 <br/>
 
-For a detailed explanation about the supply formula to calculate the coinbase: [click here](/just-the-docs/docs/supply-formula).
+For a detailed explanation about the supply formula to calculate the coinbase: [click here](/albatross-doc/docs/supply-formula).
 
 <br/>
 
