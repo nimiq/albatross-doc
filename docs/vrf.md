@@ -1,7 +1,7 @@
 ---
 layout: default
 title: VRF
-nav_order: 13
+nav_order: 14
 ---
 
 A verifiable random function is a pseudo-random function that generates a random value and allows anyone to verify if it was correctly calculated. It combines three functions: a proving function, a verifying function, and an extracting function. A key pair is used to operate these functions.

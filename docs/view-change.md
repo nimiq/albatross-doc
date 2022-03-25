@@ -1,7 +1,7 @@
 ---
 layout: default
 title: View change
-nav_order: 6
+nav_order: 13
 ---
 
 The Albatross consensus algorithm was built to adapt its behavior in case some validators act maliciously.

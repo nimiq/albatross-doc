@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Rewards
-nav_order: 10
+nav_order: 7
 ---
 
 When a potential validator becomes an active validator, it can start producing blocks. If the validator successfully produces blocks without forking or [delaying](/albatross-doc/docs/view-change) the blockchain, it will be rewarded at the macro block of the next batch.

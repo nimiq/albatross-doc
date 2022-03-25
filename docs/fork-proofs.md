@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Fork proofs
-nav_order: 7
+nav_order: 4
 ---
 
 A fork is a split in the blockchain, and it is created by malicious validators who produce two or more micro blocks at the same block height and view number. Only malicious validators will create or build on a fork, mostly to attempt a double-spend attack. Forks can only happen in micro blocks since macro blocks are forkless and produced with [Tendermint](/albatross-doc/docs/tendermint).

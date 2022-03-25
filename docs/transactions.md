@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Transactions
-nav_order: 3
+nav_order: 12
 ---
 
 Transactions are the means to communicate with the blockchain. A transaction alters the state of the blockchain, according to the blockchain rules. Transactions are stored in the micro block body.

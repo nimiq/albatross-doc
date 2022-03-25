@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Supply formula
-nav_order: 11
+nav_order: 10
 ---
 
 What we want is a formula that gives us the supply of NIM at any given time _t_. To do this first, we need the formula for the velocity. We know that it begins at <img src="https://render.githubusercontent.com/render/math?math=V_0"> and then decreases at a fixed percentage per year. This means it can only be a negative exponential:

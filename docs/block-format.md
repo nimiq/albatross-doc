@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Block Format
-nav_order: 4
+nav_order: 3
 ---
 
 Nimiq 2.0 blockchain has micro and macro blocks. Validators produce micro blocks and propose macro blocks. Both types of blocks have different functions in the blockchain. Micro and macro blocks are divided into three sections: header, body, and justification.

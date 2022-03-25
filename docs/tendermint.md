@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Tendermint
-nav_order: 9
+nav_order: 11
 ---
 
 Tendermint is a protocol implemented in blockchains that allows consensus among nodes. It has several use cases besides blockchains, but in this document, we explain how our protocol implements Tendermint.

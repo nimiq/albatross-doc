@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Slots
-nav_order: 5
+nav_order: 8
 ---
 
 Slots are what allow validators to produce micro blocks and propose and sign macro blocks. A validator uses its slots as the means to the end of producing, proposing, and signing blocks.

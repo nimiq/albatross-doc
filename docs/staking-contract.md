@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Staking contract
-nav_order: 14
+nav_order: 9
 ---
 
 The staking contract is a special contract that deals with functions regarding validators, stakers, and staking. The staking contract is coded at the genesis block and is continuously updated as the blockchain evolves. This contract is where the data of the staking contract, validators, and stakers is compiled. It also keeps all the staking contract accounts in a single location, namely the validators and stakers accounts. Any node with a wallet and stake in Nimiq's blockchain can propose to be a validator or a staker.

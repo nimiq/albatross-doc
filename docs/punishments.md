@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Punishments
-nav_order: 8
+nav_order: 6
 ---
 
 In Albatross, an elected validator that misbehaves gets punished. There are two types of misbehavior:

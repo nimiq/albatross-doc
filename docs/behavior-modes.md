@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Behavior modes
-nav_order: 12
+nav_order: 5
 ---
 
 Albatross has two modes for consensus: optimistic and pessimistic mode. The optimistic mode considers that all validators are honest and won't misbehave. But, the pessimistic mode considers having misbehaving validators.
