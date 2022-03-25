@@ -13,7 +13,7 @@ Albatross, the Nimiq 2.0 consensus algorithm, presents a novel vision on blockch
 ---
 
 
-[Block format](/just-the-docs/docs/Primitives/block-format): micro and macro blocks format.
+[Block format](/just-the-docs/docs/block-format): micro and macro blocks format.
 
 [Slots](/just-the-docs/docs/slots): how validators are selected to produce, propose and validate blocks using slots.
 
@@ -35,9 +35,9 @@ Albatross, the Nimiq 2.0 consensus algorithm, presents a novel vision on blockch
 
 [Staking contract](/just-the-docs/docs/staking-contract): detailed documentation on the staking contract.
 
-[Accounts](/just-the-docs/docs/Primitives/accounts): Nimiq’s accounts.
+[Accounts](/just-the-docs/docs/accounts): Nimiq’s accounts.
 
-[Transactions](/just-the-docs/docs/Primitives/transactions): communicating with the blockchain.
+[Transactions](/just-the-docs/docs/transactions): communicating with the blockchain.
 
 <br />
 
