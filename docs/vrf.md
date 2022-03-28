@@ -8,7 +8,7 @@ A verifiable random function is a pseudo-random function that generates a random
 
 <br/>
 
-**Prove function**: Given a message and a user’s private key as input of the function, a proof is generated.
+**Prove function**: Given a message and a user’s private key as input of the function, a proof is generated. 
 
 **Verify function**: Anyone can verify the proof's correctness by running this function. The corresponding public key, the proof, and the previous message are taken as input to verify if the proof was correctly computed.
 
