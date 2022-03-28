@@ -8,7 +8,7 @@ Transactions are the means to communicate with the blockchain. A transaction alt
 
 <br/>
 
-There are four types of [accounts](/docs/accounts) in the Nimiq 2.0 blockchain that allows a user to send and receive transactions: basic accounts, HTLC accounts, vesting accounts, and staking accounts.
+There are four types of [accounts](/albatross-doc/docs/accounts) in the Nimiq 2.0 blockchain that allows a user to send and receive transactions: basic accounts, HTLC accounts, vesting accounts, and staking accounts.
 
 <br/>
 

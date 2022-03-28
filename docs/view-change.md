@@ -13,7 +13,7 @@ The view change protocol is inspired by the PBFT algorithm, tolerating up to one
 **View change protocol**
 {: .fs-5 }
 
-A view change is a change of the view slot, and it occurs every time a validator does not produce the new block in a preset time Δ. When a validator delays producing a block, the rest of the validators from the [validators slot list](/docs/slots) will request a view change by sending a view change message. This protocol only runs in micro blocks, since macro blocks have another protocol to deal with delays.
+A view change is a change of the view slot, and it occurs every time a validator does not produce the new block in a preset time Δ. When a validator delays producing a block, the rest of the validators from the [validators slot list](/albatross-doc/docs/slots) will request a view change by sending a view change message. This protocol only runs in micro blocks, since macro blocks have another protocol to deal with delays.
 
 <br/>
 

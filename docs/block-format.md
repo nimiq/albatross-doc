@@ -19,7 +19,7 @@ Nimiq 2.0 blockchain has micro and macro blocks. Validators produce micro blocks
 **Micro Blocks**
 {: .fs-6 }
 
-Micro blocks contain user transactions, and each micro block is produced and signed by a validator according to the [validator selection](/docs/slots).
+Micro blocks contain user transactions, and each micro block is produced and signed by a validator according to the [validator selection](/albatross-doc/docs/slots).
 
 <br />
 
@@ -30,13 +30,13 @@ Micro blocks contain user transactions, and each micro block is produced and sig
 
 **Block number** `u32`: The number of the block.
 
-**View number** `u32`: The view number of the block. This number increases by one whenever a [view change](/docs/view-change) happens, and it resets on every macro block.
+**View number** `u32`: The view number of the block. This number increases by one whenever a [view change](/albatross-doc/docs/view-change) happens, and it resets on every macro block.
 
 **Timestamp** `u64`: The block's timestamp in Unix time with millisecond precision.
 
 **Parent hash** `Blake2bHash`: The hash of the header of the immediately preceding block (either micro or macro).
 
-**Seed** `VrfSeed`: The seed of the block. This seed is the implementation of the [VXEDdSA](https://www.signal.org/docs/specifications/xeddsa/#vxeddsa) algorithm of the seed of the immediately preceding block (either micro or macro) using the validator key of the block producer.
+**Seed** `VrfSeed`: The seed of the block. This seed is the implementation of the [VXEDdSA](https://www.signal.orgdocs/specifications/xeddsa/#vxeddsa) algorithm of the seed of the immediately preceding block (either micro or macro) using the validator key of the block producer.
 
 **Extra data**: Field containing arbitrary data.
 
@@ -51,9 +51,9 @@ Micro blocks contain user transactions, and each micro block is produced and sig
 **Micro body**
 {: .fs-5 }
 
-**[Fork proofs](/docs/fork-proofs)**: This contains the fork proofs of this block. This field might be empty since forks don't occur in every block.
+**[Fork proofs](/albatross-doc/docs/fork-proofs)**: This contains the fork proofs of this block. This field might be empty since forks don't occur in every block.
 
-**[Transactions](/docs/transactions)**: Contains all the transactions of the block. This field might be empty since it is possible to produce blocks without any transactions.
+**[Transactions](/albatross-doc/docs/transactions)**: Contains all the transactions of the block. This field might be empty since it is possible to produce blocks without any transactions.
 
 <br />
 
@@ -79,7 +79,7 @@ Note: `u16`, `u32`, and `u64` refer to the unsigned integer type. `Blake2bHash` 
 **Macro Blocks**
 {: .fs-6 }
 
-There are two types of macro blocks: election and checkpoint. A new validator list is elected in every election macro block, and the [staking contract](/docs/staking-contract) is updated accordingly. The checkpoint macro blocks serves to reduce the syncing time for new nodes. Macro blocks are produced with [Tendermint](/docs/terdermint), where a random validator is chosen to propose the new macro block. User transactions are not included in macro blocks.
+There are two types of macro blocks: election and checkpoint. A new validator list is elected in every election macro block, and the [staking contract](/albatross-doc/docs/staking-contract) is updated accordingly. The checkpoint macro blocks serves to reduce the syncing time for new nodes. Macro blocks are produced with [Tendermint](/albatross-doc/docs/tendermint), where a random validator is chosen to propose the new macro block. User transactions are not included in macro blocks.
 
 <br />
 
@@ -98,7 +98,7 @@ There are two types of macro blocks: election and checkpoint. A new validator li
 
 **Parent election hash** `Blake2bHash`: The hash of the header of the preceding election macro block.
 
-**Seed** `VrfSeed`: The seed of the block. This seed is the implementation of the [VXEDdSA](https://www.signal.org/docs/specifications/xeddsa/#vxeddsa) algorithm of the seed of the immediately preceding block (either micro or macro) using the validator key of the block proposer.
+**Seed** `VrfSeed`: The seed of the block. This seed is the implementation of the [VXEDdSA](https://www.signal.orgdocs/specifications/xeddsa/#vxeddsa) algorithm of the seed of the immediately preceding block (either micro or macro) using the validator key of the block proposer.
 
 **Extra data**: Field containing arbitrary data.
 
@@ -121,7 +121,7 @@ Note: `u16`, `u32`, and `u64` refer to the unsigned integer type. `Blake2bHash` 
 
 **Public key tree root**: The root of a special Merkle tree over the validator's public keys. It is used in the nano-sync.
 
-**Lost reward set**: It represents which validator slots had their reward slashed when the block was produced. It is used for [reward](/docs/rewards) distribution.
+**Lost reward set**: It represents which validator slots had their reward slashed when the block was produced. It is used for [reward](/albatross-doc/docs/rewards) distribution.
 
 **Disabled set**: It represents which validator slots aren't allowed to produce micro blocks or propose macro blocks when the block was produced. It is used for reward distribution as well.
 
