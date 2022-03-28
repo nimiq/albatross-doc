@@ -13,7 +13,7 @@ Albatross, the Nimiq 2.0 consensus algorithm, presents a novel vision on blockch
 ---
 
 
-[Block format](/albatross-doc/docs/block-format): micro and macro blocks format.
+[Block format](docs/block-format): micro and macro blocks format.
 
 [Slots](/albatross-doc/docs/slots): how validators are selected to produce, propose and validate blocks using slots.
 

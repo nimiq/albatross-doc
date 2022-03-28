@@ -54,8 +54,8 @@ The prove and extract functions allow a chain of seeds since generating a new ra
 
 Random seeds are used in three cases:
 
-**[Validator slot selection](/albatross-doc/docs/slots):** A new validator slot list is selected at the end of each epoch. The entropy extracted from the random seed is used to select this new list. The block's proposer takes the active validator set along with the entropy and creates the list.
+**[Validator slot selection](/docs/slots):** A new validator slot list is selected at the end of each epoch. The entropy extracted from the random seed is used to select this new list. The block's proposer takes the active validator set along with the entropy and creates the list.
 
-**[View slot selection](/albatross-doc/docs/slots):** A new view slot list is created at every block. The block's producer extracts the entropy from the random seed to shuffle the validator slot list resulting in the view slot list for the block.
+**[View slot selection](/docs/slots):** A new view slot list is created at every block. The block's producer extracts the entropy from the random seed to shuffle the validator slot list resulting in the view slot list for the block.
 
-**[Rewards distribution](/albatross-doc/docs/rewards):** Elected validators are rewarded at the end of every batch. The rewards are distributed among the elected validators. In every batch, the validator slot list has 512 validator slots. Since we may not be able to divide the reward of a batch by 512 slots evenly, we use the entropy from the random seed to select which elected validator receives the remainder.
+**[Rewards distribution](/docs/rewards):** Elected validators are rewarded at the end of every batch. The rewards are distributed among the elected validators. In every batch, the validator slot list has 512 validator slots. Since we may not be able to divide the reward of a batch by 512 slots evenly, we use the entropy from the random seed to select which elected validator receives the remainder.

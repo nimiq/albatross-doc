@@ -6,14 +6,14 @@ nav_order: 6
 
 In Albatross, an elected validator that misbehaves gets punished. There are two types of misbehavior:
 
-- Forking the chain, which results in getting punished once a [fork proof](/albatross-doc/docs/fork-proofs) is submitted.
-- Delaying the block production, which results in a [view change](/albatross-doc/docs/view-change) on the slot owner, thus getting punished.
+- Forking the chain, which results in getting punished once a [fork proof](/docs/fork-proofs) is submitted.
+- Delaying the block production, which results in a [view change](/docs/view-change) on the slot owner, thus getting punished.
 
 <br/>
 
 For these types of misbehavior, validators are punished in three modes:
 
-- The misbehaving slot gets its [rewards](/albatross-doc/docs/rewards) of the batch burned at the end of the next batch. This gives enough time to other validators to submit fork proofs. The burned rewards are sent to the burn address: NQ07 0000 0000 0000 0000 0000 0000 0000 0000.
+- The misbehaving slot gets its [rewards](/docs/rewards) of the batch burned at the end of the next batch. This gives enough time to other validators to submit fork proofs. The burned rewards are sent to the burn address: NQ07 0000 0000 0000 0000 0000 0000 0000 0000.
 - The misbehaving slot gets banned from view slot selection, meaning that it can't produce micro blocks or propose macro blocks. Note that it can still sign macro blocks. This only takes effect at the beginning of the next batch.
 - The validator gets punished by getting inactivated at the end of the epoch. This means it won't be eligible for validator slot selection in the next epoch.
 

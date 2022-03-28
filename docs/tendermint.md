@@ -21,9 +21,9 @@ In a proof-of-stake blockchain, to produce a new block, validators are selected 
 **Tendermint in Albatross**
 {: .fs-5 }
 
-Albatross implements Tendermint to produce macro blocks, both checkpoint and election. Validators agree on data such as the [punishments](/albatross-doc/docs/punishments) sets and the list of validators that will receive the [rewards](/albatross-doc/docs/rewards) from the previous batch.
+Albatross implements Tendermint to produce macro blocks, both checkpoint and election. Validators agree on data such as the [punishments](/docs/punishments) sets and the list of validators that will receive the [rewards](/docs/rewards) from the previous batch.
 
-Elected validators use their view [slots](/albatross-doc/docs/slots) to propose a macro block and their validator slots to sign the block proposal. Each one is selected from the view slot list and validator slot list, respectively. Elected validators with their view slots disabled can't propose macro blocks but can still use their validator slots to sign the proposals.
+Elected validators use their view [slots](/docs/slots) to propose a macro block and their validator slots to sign the block proposal. Each one is selected from the view slot list and validator slot list, respectively. Elected validators with their view slots disabled can't propose macro blocks but can still use their validator slots to sign the proposals.
 
 There are two steps of voting, therefore two rounds of signatures. The signatures are aggregated into a single signature in order to spare data space. Once a macro block is produced, it is added at a new block height. Both rounds of signatures are equivalent to the same proposal since the second round only occurs if the first is terminated. Hence, we only store the second round of signatures, reducing the amount of data in the macro block justification as well.
 

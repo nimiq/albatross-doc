@@ -15,7 +15,7 @@ A validator's responsibility is to produce, propose and sign blocks, thus valida
 
 <br/>
 
-By validating blocks, validators get rewarded for their work. The [rewards](/albatross-doc/docs/rewards) are distributed to the validator. Our blockchain requires a 10 000 NIM deposit. This minimum deposit prevents the validator from getting offline, delaying the block production, or acting maliciously. Furthermore, validator accounts are heavy on data, so the minimum deposit prevents someone from creating a validator account with 10 NIM and forgetting about it.
+By validating blocks, validators get rewarded for their work. The [rewards](/docs/rewards) are distributed to the validator. Our blockchain requires a 10 000 NIM deposit. This minimum deposit prevents the validator from getting offline, delaying the block production, or acting maliciously. Furthermore, validator accounts are heavy on data, so the minimum deposit prevents someone from creating a validator account with 10 NIM and forgetting about it.
 
 <br/>
 
@@ -56,7 +56,7 @@ This is an illustration to navigate through the staking contract. For instance, 
 
 **Balance**: The total amount of coins staked in the staking contract. This amount includes both validators and stakers deposits.
 
-**Active validators list**: A list of all the validators eligible to receive validator and view [slots](/albatross-doc/docs/slots). It also includes their corresponding balance.
+**Active validators list**: A list of all the validators eligible to receive validator and view [slots](/docs/slots). It also includes their corresponding balance.
 
 **Parked set**: The list of validators parked in the current epoch. A parked validator gets inactivated at the end of the epoch unless it sends an unparking transaction.
 
@@ -70,11 +70,11 @@ This is an illustration to navigate through the staking contract. For instance, 
 
 <br/>
 
-The staking contract gathers both current and previous lost rewards and disabled slots to keep track of the validators that get their rewards slashed. As explained in the [punishments](/albatross-doc/docs/punishments) document, validators are immediately added to the punishment sets once they misbehave. It is essential to monitor when they are added and removed since the punishment sets dictate the rewards distribution.
+The staking contract gathers both current and previous lost rewards and disabled slots to keep track of the validators that get their rewards slashed. As explained in the [punishments](/docs/punishments) document, validators are immediately added to the punishment sets once they misbehave. It is essential to monitor when they are added and removed since the punishment sets dictate the rewards distribution.
 
 <br/>
 
-Since the rewards of a batch are distributed at the end of the next batch and [fork proofs](/albatross-doc/docs/fork-proofs) can be submitted until the end of the batch after the fork occurred, the staking contract needed to keep track of which validators are punished and in which batch. The punishment sets also monitor which validators are eligible to produce blocks.
+Since the rewards of a batch are distributed at the end of the next batch and [fork proofs](/docs/fork-proofs) can be submitted until the end of the batch after the fork occurred, the staking contract needed to keep track of which validators are punished and in which batch. The punishment sets also monitor which validators are eligible to produce blocks.
 
 <br/>
 

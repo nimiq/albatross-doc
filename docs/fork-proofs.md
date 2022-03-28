@@ -4,18 +4,18 @@ title: Fork proofs
 nav_order: 4
 ---
 
-A fork is a split in the blockchain, and it is created by malicious validators who produce two or more micro blocks at the same block height and view number. Only malicious validators will create or build on a fork, mostly to attempt a double-spend attack. Forks can only happen in micro blocks since macro blocks are forkless and produced with [Tendermint](/albatross-doc/docs/tendermint).
+A fork is a split in the blockchain, and it is created by malicious validators who produce two or more micro blocks at the same block height and view number. Only malicious validators will create or build on a fork, mostly to attempt a double-spend attack. Forks can only happen in micro blocks since macro blocks are forkless and produced with [Tendermint](/docs/tendermint).
 
 <br/>
 
 There are two ways to end a fork:
 
-- When a rational validator is selected to produce the next micro block. A rational validator will not build on a fork, since it would get the view slot [punished](/albatross-doc/docs/punishments).
+- When a rational validator is selected to produce the next micro block. A rational validator will not build on a fork, since it would get the view slot [punished](/docs/punishments).
 - When the next block is a macro block since macro blocks have finality, therefore, are forkless.
 
 <br/>
 
-Mind that, even though the validator is who misbehaves, it is the view slot that gets punished. Hence, a validator can have multiple view slots in the [validator slot list](/albatross-doc/docs/slots), but only the view slot that forked the chain gets punished.
+Mind that, even though the validator is who misbehaves, it is the view slot that gets punished. Hence, a validator can have multiple view slots in the [validator slot list](/docs/slots), but only the view slot that forked the chain gets punished.
 
 <br/>
 
@@ -50,7 +50,7 @@ Using figure 2 as a reference, we can see that several validators continued to b
 
 To prove that a malicious validator forked the blockchain, a rational validator must include a fork proof in a micro block. Note that any fork in figure 2 can be a reference to a fork proof. Therefore, the fork proof applies to those who have started the fork but also to those who have continued.
 
-A fork proof can be submitted from the micro block immediately after the fork occurred until the macro block at the end of the next batch. That ensures enough time for a rational validator to include fork proofs before the [rewards](/albatross-doc/docs/rewards) are distributed. This is necessary as the rewards of the misbehaving view slots are burned.
+A fork proof can be submitted from the micro block immediately after the fork occurred until the macro block at the end of the next batch. That ensures enough time for a rational validator to include fork proofs before the [rewards](/docs/rewards) are distributed. This is necessary as the rewards of the misbehaving view slots are burned.
 
 <br/>
 
