@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Overview
-nav_order: 2
+nav_order: 15
 ---
 
 **Nimiq 2.0**

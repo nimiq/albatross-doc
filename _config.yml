@@ -16,7 +16,7 @@
 title: Albatross DOC
 description: Albatross documentation
 baseurl: "/albatross-doc" # the subpath of your site, e.g. /blog
-url: "https://nimiq.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://nimiq.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"
