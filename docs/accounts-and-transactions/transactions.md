@@ -9,7 +9,7 @@ nav_order: 3
 
 ---
 
-Transactions are the means to communicate with the blockchain. A transaction alters the state of the blockchain, according to the blockchain rules. Transactions are stored in the micro block body. There are four types of [accounts](/docs/accounts-and-transactions/accounts) in Nimiq's blockchain that allows a user to send and receive transactions.
+Transactions are the means to communicate with the blockchain. A transaction alters the state of the blockchain, according to the blockchain rules. Transactions are stored in the micro block body. There are four types of [accounts](/albatross-doc/docs/accounts-and-transactions/accounts) in Nimiq's blockchain that allows a user to send and receive transactions.
 
 <br/>
 

@@ -17,7 +17,7 @@ During a batch, there is a chance of malicious validators forking the chain or a
 
 <br/>
 
-Validators can submit a [fork proof](/docs/blockchain/fork-proofs) until the end of the batch since the rewards are distributed at the end of the next batch. Essentially, there is a delay of one batch. The [rewards](/docs/rewards-and-supply/rewards) are calculated from the macro block of the current batch and distributed at the macro block of the next batch. 
+Validators can submit a [fork proof](/albatross-doc/docs/blockchain/fork-proofs) until the end of the batch since the rewards are distributed at the end of the next batch. Essentially, there is a delay of one batch. The [rewards](/albatross-doc/docs/rewards-and-supply/rewards) are calculated from the macro block of the current batch and distributed at the macro block of the next batch. 
 
 <br/>
 
@@ -55,7 +55,7 @@ Essentially, the coinbase is calculated by subtracting the supply calculated in 
 
 <br/>
 
-For a detailed explanation about the supply formula to calculate the coinbase: [click here](/docs/rewards-and-supply/supply-formula).
+For a detailed explanation about the supply formula to calculate the coinbase: [click here](/albatross-doc/docs/rewards-and-supply/supply-formula).
 
 <br/>
 

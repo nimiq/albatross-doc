@@ -24,7 +24,7 @@ Nimiq 2.0 blockchain has micro and macro blocks. Validators produce micro blocks
 **Micro Blocks**
 {: .fs-6 }
 
-Micro blocks contain user transactions, and each micro block is produced and signed by a validator according to the [validator selection](/docs/blockchain/slots).
+Micro blocks contain user transactions, and each micro block is produced and signed by a validator according to the [validator selection](/albatross-doc/docs/blockchain/slots).
 
 <br />
 
@@ -35,7 +35,7 @@ Micro blocks contain user transactions, and each micro block is produced and sig
 
 **Block number** `u32`: The number of the block.
 
-**View number** `u32`: The view number of the block. This number increases by one whenever a [view change](/docs/blockchain/view-change) happens, and it resets on every macro block.
+**View number** `u32`: The view number of the block. This number increases by one whenever a [view change](/albatross-doc/docs/blockchain/view-change) happens, and it resets on every macro block.
 
 **Timestamp** `u64`: The block's timestamp in Unix time with millisecond precision.
 
@@ -56,9 +56,9 @@ Micro blocks contain user transactions, and each micro block is produced and sig
 **Micro body**
 {: .fs-5 }
 
-**[Fork proofs](/docs/blockchain/fork-proofs)**: This contains the fork proofs of this block. This field might be empty since forks don't occur in every block.
+**[Fork proofs](/albatross-doc/docs/blockchain/fork-proofs)**: This contains the fork proofs of this block. This field might be empty since forks don't occur in every block.
 
-**[Transactions](/docs/accounts-and-transactions/transactions)**: Contains all the transactions of the block. This field might be empty since it is possible to produce blocks without any transactions.
+**[Transactions](/albatross-doc/docs/accounts-and-transactions/transactions)**: Contains all the transactions of the block. This field might be empty since it is possible to produce blocks without any transactions.
 
 <br />
 
@@ -84,7 +84,7 @@ Note: `u16`, `u32`, and `u64` refer to the unsigned integer type. `Blake2bHash` 
 **Macro Blocks**
 {: .fs-6 }
 
-There are two types of macro blocks: election and checkpoint. A new validator list is elected in every election macro block, and the [staking contract](/docs/staking-contract/staking-contract) is updated accordingly. The checkpoint macro blocks serves to reduce the syncing time for new nodes. Macro blocks are produced with [Tendermint](/docs/blockchain/tendermint), where a random validator is chosen to propose the new macro block. User transactions are not included in macro blocks.
+There are two types of macro blocks: election and checkpoint. A new validator list is elected in every election macro block, and the [staking contract](/albatross-doc/docs/staking-contract/staking-contract) is updated accordingly. The checkpoint macro blocks serves to reduce the syncing time for new nodes. Macro blocks are produced with [Tendermint](/albatross-doc/docs/blockchain/tendermint), where a random validator is chosen to propose the new macro block. User transactions are not included in macro blocks.
 
 <br />
 
@@ -126,7 +126,7 @@ Note: `u16`, `u32`, and `u64` refer to the unsigned integer type. `Blake2bHash` 
 
 **Public key tree root**: The root of a special Merkle tree over the validator's public keys. It is used in the nano-sync.
 
-**Lost reward set**: It represents which validator slots had their reward slashed when the block was produced. It is used for [reward](/docs/rewards-and-supply/rewards) distribution.
+**Lost reward set**: It represents which validator slots had their reward slashed when the block was produced. It is used for [reward](/albatross-doc/docs/rewards-and-supply/rewards) distribution.
 
 **Disabled set**: It represents which validator slots aren't allowed to produce micro blocks or propose macro blocks when the block was produced. It is used for reward distribution as well.
 
