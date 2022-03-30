@@ -9,7 +9,7 @@ nav_order: 2
 
 ---
 
-Nimiq 2.0 has four types of accounts: basic accounts, HTLC accounts, vesting accounts and staking accounts. Users can operate with their accounts and interact with the blockchain through [transactions](/docs/accounts-and-transactions/transactions). Each account has a unique address. They are stored in the state tree of the blockchain.
+Nimiq 2.0 has four types of accounts: basic accounts, HTLC accounts, vesting accounts and staking accounts. Users can operate with their accounts and interact with the blockchain through [transactions](/albatross-doc/docs/accounts-and-transactions/transactions). Each account has a unique address. They are stored in the state tree of the blockchain.
 
 <br/>
 
