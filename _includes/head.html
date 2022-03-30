@@ -1,6 +1,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  
 
   {% unless site.plugins contains "jekyll-seo-tag" %}
     <title>{{ page.title }} - {{ site.title }}</title>
@@ -13,6 +14,8 @@
   <link rel="shortcut icon" href="{{ 'favicon.ico' | relative_url }}" type="image/x-icon">
 
   <link rel="stylesheet" href="{{ '/assets/css/just-the-docs-default.css' | relative_url }}">
+
+  <link rel="stylesheet" href="https://use.typekit.net/dok7kbu.css">
 
   {% if site.ga_tracking != nil %}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga_tracking }}"></script>
