@@ -4,6 +4,10 @@ title: Glossary
 nav_order: 16
 ---
 
+# Glossary
+
+---
+
 **Account**
 {: .fs-5 }
 
