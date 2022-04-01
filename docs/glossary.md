@@ -252,3 +252,7 @@ A number that keeps track of the view slot at the current block. Its number incr
 {: .fs-5 }
 
 What allows elected validators to produce a micro block or propose a macro block at a specific block height and specific view number.
+
+<br />
+
+[Back to top](#)

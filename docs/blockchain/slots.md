@@ -69,3 +69,7 @@ In the example of validator 1, it holds 25 validator slots from slot 0 to slot 2
 <br/>
 
 In the figure above, we demonstrate where the random seed is applied to the view slot lists. The random seed of macro block B is used to create the view slot list for micro block C. To create the view slot list for micro block D, the random seed of micro block C is used. And so on.
+
+<br />
+
+[Back to top](#)

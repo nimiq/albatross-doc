@@ -47,3 +47,7 @@ Transactions can't have the same sender and recipient except for the staking con
 <br/>
 
 **Proof**: The information above is then hashed and calculated with the sender’s private key, resulting in the proof for the transaction. This proof authenticates the sender of the transaction.
+
+<br />
+
+[Back to top](#)

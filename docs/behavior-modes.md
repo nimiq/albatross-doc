@@ -49,3 +49,7 @@ In either case, the malicious validators are punished according to the [punishme
 
   - Failing to make a macro block proposal. If a validator doesn’t propose a macro block in the expected time, [Tendermint](/albatross-doc/docs/blockchain/tendermint) has its procedure to elect a new macro block leader.
   - Creating an invalid proposal. Tendermint ignores invalid proposals, therefore, a new validator is elected as the macro block leader.
+
+<br />
+
+[Back to top](#)

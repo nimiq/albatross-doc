@@ -98,3 +98,7 @@ The probability decreases rapidly, as shown in the following table:
 </p>
 
 _Figure 3_
+
+<br />
+
+[Back to top](#)

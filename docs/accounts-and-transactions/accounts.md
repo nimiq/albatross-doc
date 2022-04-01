@@ -31,7 +31,6 @@ A HTLC is a conditional payment implemented by a script in the blockchain. It's 
 
 <br/>
 
-
 The structure of the HTLC:
 
 - **Balance**: The balance of the contract at any given time. It can differ from the “total amount” since it’s possible to withdraw partial amounts at a time.
@@ -99,3 +98,7 @@ Note that unlocking the funds is a predefined action, and it happens at every �
 The staking contract is a Nimiq 2.0 type of contract that allows nodes to be validators and stakers, thus being a part of the consensus. Any node with a wallet and stake in Nimiq's blockchain can propose to be a validator or a staker.
 
 For a detailed explanation about the staking contract, follow this [link](/albatross-doc/docs/staking-contract/staking-contract) to read on validators, stakers, and their interactions with the staking contract.
+
+<br />
+
+[Back to top](#)

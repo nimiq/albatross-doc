@@ -76,3 +76,7 @@ However, it might be more useful for other applications to have a supply formula
 <p align="center">
   <img src="https://render.githubusercontent.com/render/math?math=\beta=-\frac{\ln(0.9853)}{365.2425}\approx0.000040546">
 </p>
+
+<br />
+
+[Back to top](#)

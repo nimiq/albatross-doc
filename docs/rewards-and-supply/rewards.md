@@ -65,3 +65,7 @@ For a detailed explanation about the supply formula to calculate the coinbase: [
 The rewards of a batch are equally divided among the validator slot list. Hence, the reward is equally divided among all the slots. The validator slot list contains 512 view slots, and validator can have one view slot or multiple ones.
 
 When a validator misbehaves, it will get punished and have its rewards burned. If a validator forks the chain or delays the production of blocks, it won't receive the rewards of the batch where it has misbehaved.
+
+<br />
+
+[Back to top](#)

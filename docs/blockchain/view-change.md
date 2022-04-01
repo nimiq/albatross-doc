@@ -79,3 +79,7 @@ The view change message is signed and sent by each validator slot.
 {: .fs-5 }
 
 When a view change is requested and the validators run the view change algorithm, the block must include a view change proof, proving that a view change occurred in that block. This proof is added to the micro block justification and is an optional field, since a view change may not happen in a block. The proof consists of the aggregated BLS signature of the slots who have signed the view change message.
+
+<br />
+
+[Back to top](#)

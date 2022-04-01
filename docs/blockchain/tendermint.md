@@ -89,3 +89,7 @@ In order to simplify and reduce the amount of data that running the original pro
 | The protocol accepts invalid proposals, but validators don't sign invalid proposals.                                                                                 | The protocol immediately ignores invalid proposals. Validators only receive valid proposals.                                                                             |
 | Tendermint is constantly listening to messages: proposals, prevotes, and precommits.                                                                                 | Albatross use another part of the protocol to receive votes, and it terminates each step once that part is satisfied.                                                    |
 | As soon as 2𝑓+1 precommit messages are received, the algorithm ends Tendermint.                                                                                      | A part of Albatross is always listening for complete blocks. Once that part listens to a complete block, it terminates the Tendermint algorithm.                         |
+
+<br />
+
+[Back to top](#)

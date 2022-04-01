@@ -63,3 +63,7 @@ Random seeds are used in three cases:
 **[View slot selection](/albatross-doc/docs/blockchain/slots):** A new view slot list is created at every block. The block's producer extracts the entropy from the random seed to shuffle the validator slot list resulting in the view slot list for the block.
 
 **[Rewards distribution](/albatross-doc/docs/rewards-and-supply/rewards):** Elected validators are rewarded at the end of every batch. The rewards are distributed among the elected validators. In every batch, the validator slot list has 512 validator slots. Since we may not be able to divide the reward of a batch by 512 slots evenly, we use the entropy from the random seed to select which elected validator receives the remainder.
+
+<br />
+
+[Back to top](#)

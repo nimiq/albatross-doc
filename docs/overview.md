@@ -34,3 +34,7 @@ Albatross has two behavior modes to reach an agreement between nodes: optimistic
 {: .fs-5 }
 
 Nimiq developed a particular contract to support the new blockchain that handles functions regarding validators and keeps it in a single location - the staking contract. Any user with a balance in Nimiq's network can propose to become a validator or a staker. Validators validate blocks and get rewarded for their work. Stakers can delegate their coins for validators to use their stake.
+
+<br />
+
+[Back to top](#)

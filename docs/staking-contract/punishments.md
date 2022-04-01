@@ -83,3 +83,7 @@ In the following figure, we explain three different scenarios where validators h
    - At block D, the validator got cleared from the lost reward set automatically.
    - This validator won't receive the rewards of batch 1 at macro block H, neither none of the rewards of the next batches. Either it can produce blocks from the subsequent batch where it got parked.
    - It remained parked until the end of the epoch at macro block L, getting inactivated.
+
+   <br />
+
+[Back to top](#)
